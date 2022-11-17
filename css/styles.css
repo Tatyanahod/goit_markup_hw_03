@@ -13,8 +13,14 @@ letter-spacing: 0.03em;
 font-weight: 400;
 }
 
-ul {list-style: none;}
+ul {
+margin: 0;
+padding: 0;
+list-style: none;}
 
+.page-header{
+    background-color: tomato;
+}
 .logo{
 font-weight: 700;
 text-decoration: none;
@@ -26,7 +32,13 @@ color: #000000;
 .part-logo{
 color: var(--accent-color);
 }
-
+.conteiner{
+margin: auto;
+margin-top: 0;
+width: 1230px;
+padding-left: 15px;
+padding-right: 15px;
+}
 .list-nav a {
 text-decoration: none;
 font-style: normal;
@@ -52,18 +64,29 @@ color: var(--accent-color);
 .list-nav .link-current{
 color: var(--accent-color);
 }
+.baner{
+text-align: center;
+width: 1400px;
+}
 .titel-baner {
+margin-top: 0;
+margin-bottom: 30px;
+width: 696px;
 font-weight: 900;
 font-style: normal;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
 letter-spacing: 0.06em;
 color: var(--white-text-color);
 text-transform: uppercase;;
+background-color: blue;
 }
 
 .button {
+margin-top: 0;
+display: inline-block;
+padding: 10px 34px;
+min-width: 200px;
 font-weight: 700;
 font-family: inherit;
 background-color: var(--accent-color);
@@ -72,35 +95,52 @@ line-height: 1.9;
 letter-spacing: 0.06em;
 color: var(--white-text-color);
 cursor: pointer;
-      
+
+}
+.list-benefits{
+margin-top: 0;
+margin-bottom: 94px;
 }
 .titel-benefits {
+margin-top: 0;
+margin-bottom: 10px;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 }
 .text-benefits {
+margin-top: 0;
+margin-bottom: 0;
 font-size: 14px;
 line-height: 1.7;
 color: var(--dop-text-color);      
 }
 
-.team {
-background-color: #F5F4FA;
-}
+.section {
+padding-top: 94px;
+padding-bottom: 94px;}
 
 .titel-team, .titel-activities{
+margin-top: 0;
+margin-bottom: 50px;
 font-size: 36px;
 line-height: 1.16;
 }
-
+.list-team img{
+margin-top: 0;
+margin-bottom: 30px;
+}
 .caption-team{
+margin-top: 0;
+margin-bottom: 10px;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 text-align: center;
 }
 .text-team{
+margin-top: 0;
+margin-bottom: 0;
 font-size: 16px;
 line-height: 1.18;
 text-align: center;
@@ -133,10 +173,20 @@ font-size: 16px;
 line-height: 2.14;
 color: var(--dop-text-color);
 }
+.footer{
+margin-top: 0;
+margin-bottom: 0;
+padding-top: 60px;
+padding-bottom: 60px;
+background-color: #2F303A;;
+}
 .list-address a{
 font-style: normal;
 text-decoration: none;
 font-size: 14px;
 line-height: 1.7;
-color: var(--primary-text-color);
+color: rgba(255, 255, 255, 0.6)
+}
+.list-address span{
+color: var(--white-text-color);
 }
