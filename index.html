@@ -13,7 +13,7 @@
 <body class="page">
 <!--шапка-->
 <header class="page-header">
-<div class="conteiner">
+<div class="conteiner nav">
     <a class="logo" href="./index.html"> <span class="part-logo">Web</span>Studio</a>
     <nav class="site-nav">
         <ul class="list-nav">
@@ -31,8 +31,7 @@
 </header>
 <main class="main">
     <!--baner-->
-    <div class="baner">
-    <section>
+    <div class="conteiner baner">
         <h1 class="titel-baner">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button">Замовити послугу</button>
     </section>
@@ -40,9 +39,8 @@
    
     
         <!--preimushestva-->
-    
+    <div class="conteiner">
         <section class="section">
-            <div class="conteiner">
             <h2 hidden class="h-benefits">Наші переваги</h2>
             <ul class="list-benefits">
                 <li>
@@ -63,12 +61,13 @@
                 </li>
             
             </ul>
-            </div>
             
-        </section>
         
+        </section>
+    </div>
            <!--napravleniye-->
-        <section class="section">
+        <div class="conteiner">
+           <section class="section">
             <h2 class="titel-activities"> Чим ми займаємося</h2>
             <ul class="list-activities-img">
                 <li><img src="./images/box1.jpg" width="370" alt="Створення сайтів"></li>
@@ -78,38 +77,41 @@
                
             
         </section>
-       
+        </div>
         <!--komanda-->
-        <section class="section">
-            <h2 class="titel-team">Наша команда</h2>
-            <ul class="list-team">
-                <li>
-                    <img src="./images/img.jpg" width="270"  alt="Ігор Дем'яненко - Product Designer">
-                    <h3 class="caption-team">Ігор Дем'яненко</h3>
-                    <p class="text-team">Product Designer</p>
-                </li>
-                <li>
-                    <img src="./images/img2.jpg" width="270" alt="Ольга Рєпіна - Frontend Developer">
-                    <h3 class="caption-team">Ольга Рєпіна</h3>
-                    <p class="text-team">Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="./images/img3.jpg" width="270" alt="Микола Тарасов - Marketing">
-                    <h3 class="caption-team">Микола Тарасов</h3>
-                    <p class="text-team">Marketing</p>   
-                </li>
-                <li>
-                    <img src="./images/img4.jpg" width="270" alt="Михайло Єрмаков - UI Designer">
-                    <h3 class="caption-team">Михайло Єрмаков</h3>
-                    <p class="text-team">UI Designer</p>
-                </li>
-            </ul>
-        </section>
+        <div class="conteiner">
+            <section class="section team">
+                <h2 class="titel-team">Наша команда</h2>
+                <ul class="list-team">
+                    <li>
+                        <img src="./images/img.jpg" width="270" alt="Ігор Дем'яненко - Product Designer">
+                        <h3 class="caption-team">Ігор Дем'яненко</h3>
+                        <p class="text-team">Product Designer</p>
+                    </li>
+                    <li>
+                        <img src="./images/img2.jpg" width="270" alt="Ольга Рєпіна - Frontend Developer">
+                        <h3 class="caption-team">Ольга Рєпіна</h3>
+                        <p class="text-team">Frontend Developer</p>
+                    </li>
+                    <li>
+                        <img src="./images/img3.jpg" width="270" alt="Микола Тарасов - Marketing">
+                        <h3 class="caption-team">Микола Тарасов</h3>
+                        <p class="text-team">Marketing</p>
+                    </li>
+                    <li>
+                        <img src="./images/img4.jpg" width="270" alt="Михайло Єрмаков - UI Designer">
+                        <h3 class="caption-team">Михайло Єрмаков</h3>
+                        <p class="text-team">UI Designer</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        
     </main>
  
 <!--contacts-->
 <footer class="footer">
-    <div class="conteiner"></div>
+    <div class="conteiner">
     <a class="logo" href=""> <span class="part-logo">Web</span>Studio</a>
         <address>
         <ul class="list-address">
@@ -118,7 +120,7 @@
             <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
         </address>
-     
+    </div>
 </footer>
 
 </body>

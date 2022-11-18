@@ -4,6 +4,7 @@
 --accent-color:#2196F3;
 --white-text-color:#FFFFFF;
 --primary-background-color: #F5F5F5;
+--secondary-background-color: #F5F4FA;
 }
 .page{
 background-color: var(--primary-background-color);
@@ -18,10 +19,10 @@ margin: 0;
 padding: 0;
 list-style: none;}
 
-.page-header{
-    background-color: tomato;
-}
 .logo{
+padding-top: 24px;
+padding-bottom: 25px;
+margin-right: 93px;
 font-weight: 700;
 text-decoration: none;
 font-family: 'Raleway';
@@ -35,11 +36,35 @@ color: var(--accent-color);
 .conteiner{
 margin: auto;
 margin-top: 0;
-width: 1230px;
+width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 }
+.conteiner.nav{
+display: flex;
+align-items: center;
+}
+.list-nav{
+display: flex;
+}
+.contacts{
+display: flex;
+}
+.list-nav li{
+margin-right: 50px;
+}
+.list-nav li:last-child{
+margin-right: 0;
+}
+.contacts li+li{
+margin-left: 40px;
+}
+.contacts {
+margin-left: auto;
+}
 .list-nav a {
+padding-top: 32px;
+padding-bottom: 32px;
 text-decoration: none;
 font-style: normal;
 font-weight: 500;
@@ -47,16 +72,21 @@ font-size: 14px;
 line-height: 1.15;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
+text-align: center;
+display: block;
 }
 .contacts a{
- text-decoration: none;
+padding-top: 32px;
+padding-bottom: 32px;
+text-decoration: none;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.15;
 letter-spacing: 0.02em;
-color: #757575;
-        
+color: var(--dop-text-color);
+text-align: center;
+display: block;
 }
 .list-nav a:hover, .contacts a:hover, .list-nav a:focus, .contacts a:focus{
 color: var(--accent-color);
@@ -64,9 +94,8 @@ color: var(--accent-color);
 .list-nav .link-current{
 color: var(--accent-color);
 }
-.baner{
+.conteiner.baner{
 text-align: center;
-width: 1400px;
 }
 .titel-baner {
 margin-top: 0;
@@ -78,8 +107,8 @@ font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
 color: var(--white-text-color);
-text-transform: uppercase;;
-background-color: blue;
+text-transform: uppercase;
+text-align: center;
 }
 
 .button {
@@ -95,12 +124,22 @@ line-height: 1.9;
 letter-spacing: 0.06em;
 color: var(--white-text-color);
 cursor: pointer;
-
+border: none;
+border-radius: 6px;
 }
 .list-benefits{
 margin-top: 0;
-margin-bottom: 94px;
+padding-bottom: 94px;
+display: flex;
 }
+.list-benefits li{
+margin-right: 30px;
+}
+
+.list-benefits li:last-child {
+margin-right: 0px;
+}
+
 .titel-benefits {
 margin-top: 0;
 margin-bottom: 10px;
@@ -118,17 +157,41 @@ color: var(--dop-text-color);
 
 .section {
 padding-top: 94px;
-padding-bottom: 94px;}
-
+padding-bottom: 94px;
+padding-left: 15px;
+padding-right: 15px;
+width: 1200px;
+}
+.section.team{
+background-color: var(--secondary-background-color);
+}
 .titel-team, .titel-activities{
 margin-top: 0;
 margin-bottom: 50px;
 font-size: 36px;
 line-height: 1.16;
+text-align: center;
 }
-.list-team img{
-margin-top: 0;
-margin-bottom: 30px;
+.list-activities-img{
+display: flex;
+}
+.list-activities-img li{
+display: block;
+margin-right: 30px;
+}
+
+.list-activities-img li:last-child{
+margin-right: 0;
+}
+.list-team {
+display: flex;
+}
+.list-team li{
+    display: block;
+margin-right: 30px;
+}
+.list-team li:last-child{
+margin-right: 0;
 }
 .caption-team{
 margin-top: 0;
@@ -146,29 +209,66 @@ line-height: 1.18;
 text-align: center;
 color: var(--dop-text-color);
 }
+.list-buttons{
+display: flex;
+text-align: center;
+}
+.list-buttons li {
+margin-right: 8px;
+}
+
+.list-buttons li:last-child {
+margin-right: 0;
+}
 .port-button{
+margin-top: 0;
+padding: 6px 22px;
+display: inline-block;
 font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
 text-align: center;
 cursor: pointer;
+background-color: var(--secondary-background-color);
+border: none;
+color: var(--primary-text-color);
+min-width: 125px;
+border-radius: 6px;
 }
 .port-button:hover, .port-button:focus{
+margin-top: 0;
+display: inline-block;
 background-color: var(--accent-color);
 color: var(--white-text-color);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
 text-align: center;
+border: none;
+min-width: 125px;
+}
+.conteiner.works{
+padding-top: 80px;
+padding-bottom: 108px;
+}
+.list-portfolio{
+
+}
+.list-portfolio img{
+margin-bottom: 20px;
 }
 .titel-portfolio{
+margin-bottom: 4px;
+margin-top: 0;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 }
 .text-portfolio{
+margin-top: 0;
+margin-bottom: 20px;
 font-size: 16px;
 line-height: 2.14;
 color: var(--dop-text-color);
