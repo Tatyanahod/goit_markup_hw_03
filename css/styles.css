@@ -5,6 +5,7 @@
 --white-text-color:#FFFFFF;
 --primary-background-color: #F5F5F5;
 --secondary-background-color: #F5F4FA;
+--border-color: #EEEEEE;
 }
 .page{
 background-color: var(--primary-background-color);
@@ -13,14 +14,16 @@ color: var(--primary-text-color);
 letter-spacing: 0.03em;
 font-weight: 400;
 }
-.conteiner.nav{
-border-bottom: 1px #757575 solid;
+.page.portfolio{
+background-color: var(--white-text-color);
 }
 ul {
 margin: 0;
 padding: 0;
 list-style: none;}
-
+.page-header.port{
+border-bottom: 1px var(--border-color) solid;
+}
 .logo{
 padding-top: 24px;
 padding-bottom: 25px;
@@ -32,6 +35,13 @@ font-size: 26px;
 line-height: 1.2;
 color: #000000;
 }
+.logo.footer{
+margin-right: 0;
+margin-bottom: 28px;
+display: inline-block;
+padding: 0;
+color: #FFFFFF;
+}
 .part-logo{
 color: var(--accent-color);
 }
@@ -42,6 +52,17 @@ width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 }
+.section {
+padding-top: 94px;
+padding-left: 15px;
+padding-right: 15px;
+}
+.section.baner {
+text-align: center;
+padding: 200px 15px;
+}
+
+
 .conteiner.nav{
 display: flex;
 align-items: center;
@@ -94,9 +115,7 @@ color: var(--accent-color);
 .list-nav .link-current{
 color: var(--accent-color);
 }
-.conteiner.baner{
-text-align: center;
-}
+
 .titel-baner{
 margin-top: 0;
 margin-bottom: 30px;
@@ -107,6 +126,7 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 color: var(--white-text-color);
 text-transform: uppercase;
+
 }
 
 .button {
@@ -127,11 +147,11 @@ border-radius: 6px;
 }
 .list-benefits{
 margin-top: 0;
-padding-bottom: 94px;
 display: flex;
 }
 .list-benefits li{
 margin-right: 30px;
+width: 270px;
 }
 
 .list-benefits li:last-child {
@@ -153,14 +173,15 @@ line-height: 1.7;
 color: var(--dop-text-color);      
 }
 
-.section {
-padding-top: 94px;
-padding-bottom: 94px;
-padding-left: 15px;
-padding-right: 15px;
+.section.benefits{
+padding-top: 0;
 }
 .section.team{
 background-color: var(--secondary-background-color);
+padding-bottom: 94px;
+}
+.discription-team{
+
 }
 .titel-team, .titel-activities{
 margin-top: 0;
@@ -171,6 +192,7 @@ text-align: center;
 }
 .list-activities-img{
 display: flex;
+margin-bottom: 82px;
 }
 .list-activities-img li{
 display: block;
@@ -182,6 +204,9 @@ margin-right: 0;
 }
 .list-team {
 display: flex;
+}
+.discription-team{
+padding: 30px 0;
 }
 .list-team li{
     display: block;
@@ -209,10 +234,10 @@ color: var(--dop-text-color);
 .list-buttons{
 display: flex;
 justify-content:center;
+margin-bottom: 50px;
 }
 .list-buttons li {
 margin-right: 8px;
-margin-bottom: 34px;
 }
 
 .list-buttons li:last-child {
@@ -221,7 +246,6 @@ margin-right: 0;
 .port-button{
 margin-top: 0;
 padding: 6px 22px;
-display: inline-block;
 font-family: inherit;
 font-weight: 500;
 font-size: 16px;
@@ -231,7 +255,6 @@ cursor: pointer;
 background-color: var(--secondary-background-color);
 border: none;
 color: var(--primary-text-color);
-min-width: 125px;
 border-radius: 6px;
 }
 .port-button:hover, .port-button:focus{
@@ -244,9 +267,8 @@ font-size: 16px;
 line-height: 1.6;
 text-align: center;
 border: none;
-min-width: 125px;
 }
-.conteiner.works{
+.section.works{
 padding-top: 80px;
 padding-bottom: 108px;
 width: 1200px;
@@ -270,9 +292,13 @@ margin-right: 0;
 .list-portfolioli:nth-last-child(-n+3){
 margin-bottom: 0;
 }
-.list-portfolio img{
-margin-bottom: 20px;
+.port-text{
+padding: 20px 24px;
+margin-top: 0;
+width: 370px;
+border: 1px var(--border-color) solid;
 }
+
 .titel-portfolio{
 margin-bottom: 4px;
 margin-top: 0;
@@ -292,9 +318,14 @@ color: var(--dop-text-color);
 margin-top: 0;
 margin-bottom: 0;
 padding-top: 60px;
-padding-bottom: 60px;
 background-color: #2F303A;
-border-top: 1px #000000 solid;
+padding-bottom: 60px;
+}
+.footer li{
+margin-bottom: 12px;
+}
+.footer li:last-child{
+margin-bottom: 0;
 }
 .list-address a{
 font-style: normal;
